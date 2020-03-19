@@ -1,4 +1,7 @@
 <script src='https://cdn.jsdelivr.net/gh/aframevr/aframe@1c2407b26c61958baa93967b5412487cd94b290b/dist/aframe-master.min.js'></script>
+<script src="https://cdn.jsdelivr.net/gh/donmccurdy/aframe-extras@v6.1.0/dist/aframe-extras.min.js"></script>
+<script src="https://raw.githubusercontent.com/mrdoob/three.js/master/build/three.min.js"></script>
+<script src="https://raw.githubusercontent.com/mrdoob/three.js/master/build/three.module.js"></script>
 
 <style>
   .arjs-loader {
@@ -40,8 +43,9 @@
             smooth='true' smoothCount='10' smoothTolerance='0.01' smoothThreshold='5'>
             <a-entity
                 gltf-model='https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Models/master/2.0/BrainStem/glTF/BrainStem.gltf'
-                scale="5 5 5"
+                scale="30 30 30"
                 position="50 150 0"
+                animation-mixer="loop: repeat"
                 >
             </a-entity>
         </a-nft>
